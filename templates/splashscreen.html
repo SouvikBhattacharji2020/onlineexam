@@ -1,0 +1,38 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AsanSolution|Education 2020</title>
+  <link href="{% static 'images/icon.ico' %}" height="95px" width="45px" rel="icon">
+  <link href="{% static 'images/icon.ico' %}" height="95px" width="45px" rel="apple-touch-icon">
+<style>
+body {
+	background-image: url("{% static 'images/1.gif' %}");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+	}
+</style>
+ <script type="text/javascript">
+   function myFunction(){
+   	var seconds = 16;
+    
+    setInterval(function () {
+        seconds--;
+        
+        if (seconds == 0) {
+            
+            window.location = "loginpanel/";
+        }
+    }, 1000);
+}
+  </script>
+</head>
+<body onload="myFunction()">
+
+
+
+</body>
+</html>

@@ -1,0 +1,202 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AsanSolution|Education 2020</title>
+	<link href="{% static 'images/icon.ico' %}" height="95px" width="45px" rel="icon">
+  <link href="{% static 'images/icon.ico' %}" height="95px" width="45px" rel="apple-touch-icon">
+	<link
+  href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+  rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+  rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/1.0.0-alpha4/mdb.min.css"
+  rel="stylesheet"
+/>
+
+	<style>
+body {
+	background: #9575CD;
+	margin-top: 10px;
+	background-image: url("{% static 'images/Background1.jpg' %}");
+	background-repeat: no-repeat;
+	background-position: center left;
+	background-attachment: fixed;
+	
+	}
+</style>
+</head>
+<body class="img-fluid rounded">
+
+<header>
+  <!-- Navbar -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fg-white fixed-top  ">
+  <!-- Container wrapper -->
+
+<img src="{% static 'images/Logo_Set.gif' %}" height="60px" width="280px">
+
+  <div class="container-fluid">
+    <!-- Toggle button -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarRightAlignExample"
+      aria-controls="navbarRightAlignExample"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarRightAlignExample">
+      <!-- Left links -->
+      <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <!-- Navbar dropdown -->
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Dropdown
+          </a>
+          <!-- Dropdown menu -->
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"
+            >Disabled</a
+          >
+        </li>
+      </ul>
+      <!-- Left links -->
+    </div>
+    <!-- Collapsible wrapper -->
+  </div>
+  <!-- Container wrapper -->
+</nav>
+
+
+
+
+
+
+  <!-- Navbar -->
+
+  <!-- Background image -->
+  <div
+    class="p-5 text-center bg-image"
+    style="
+      
+      height: 200px;
+      margin-top: 58px;
+    "
+  >
+    <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);height: 70%;">
+      <div class="d-flex justify-content-center align-items-center h-70">
+        <div class="text-white">
+          <h1 class="mt-3">Asansolution - Class Exam 2020</h1>
+          <h4 class="mt-3">Computer Quiz Project</h4>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Background image -->
+</header>
+
+
+
+<div class="row">
+  <div class="col-md-5"></div>
+  <div class="col-md-6 bg-white pt-1 pb-2 " style="border-color: #fff000; border-size:1.5px; border-radius: 7px; position:relative; top:-40px;">
+
+<div>
+	<!--
+<p class="note note-info">
+  <strong>Note info:</strong> You need to enter correct user name, email id and password to Login
+</p>
+	-->
+</div>
+
+<div id="login">
+	<div id="login_name" class="bg-dark text-white p-3 mb-4" style="border-radius: 7px;">
+		<h2> Student Login </h2>
+	</div>
+	<div class="form-outline">
+  <input type="text" id="typeText" class="form-control bg-white" />
+  <label class="form-label" for="typeText"> User Name </label>
+</div>
+<br>
+<div class="form-outline">
+  <input type="email" id="typeEmail" class="form-control bg-white" />
+  <label class="form-label" for="typeEmail"> Email </label>
+</div>
+<br>
+<div class="form-outline">
+  <input type="password" id="typePassword" class="form-control bg-white" />
+  <label class="form-label" for="typePassword"> Password </label>
+</div>
+<br>
+<div class="bg-dark pb-1 " style="border-radius: 7px; text-align: right; padding-right: 20px;">
+<button type="button" class="btn btn-danger pl-4 pr-4 mr-2 mt-3 justify-content-end" style="align:right;">Exit</button>
+<button type="button" class="btn btn-primary pl-4 pr-4 ml-2 mt-3 justify-content-end" style="align:right;">Enter</button>
+</div>
+
+</div>
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+<footer class="bg-dark text-white text-center text-lg-left fixed-bottom">
+  
+  <!-- Grid container -->
+ <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2014-20 Copyright: <a class="text-warning" href="https://asansolution.com/"><b style="font-size:23px;">asansolution.com</b></a> <b>Created by :</b> <i class="text-info">Souvik Bhattacharji.</i>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+
+
+<!-- MDB -->
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/1.0.0-alpha4/mdb.min.js">
+</script>
+</body>
+</html>

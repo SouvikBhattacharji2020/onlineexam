@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AsanSolution|Education 2020</title>
+  <link rel="shortcut icon" href="icon.ico">
+	<!-- Font Awesome -->
+<link
+  href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+  rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+  rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/1.0.0-alpha4/mdb.min.css"
+  rel="stylesheet"
+/>
+
+<style type="text/css">
+	
+
+body{
+	text-align: center; 
+	background-image: url("Background_Pic1.jpg");
+  background-height:100%;
+  background-width:100%;
+  background-repeat: repeat-none;
+	}
+
+
+.base-timer {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.base-timer__svg {
+  transform: scaleX(-1);
+}
+
+.base-timer__circle {
+  fill: none;
+  stroke: none;
+}
+
+.base-timer__path-elapsed {
+  stroke-width: 7px;
+  stroke: grey;
+}
+
+.base-timer__path-remaining {
+  stroke-width: 7px;
+  stroke-linecap: round;
+  transform: rotate(90deg);
+  transform-origin: center;
+  transition: 1s linear all;
+  fill-rule: nonzero;
+  stroke: currentColor;
+}
+
+.base-timer__path-remaining.green {
+  color: rgb(65, 184, 131);
+}
+
+.base-timer__path-remaining.orange {
+  color: orange;
+}
+
+.base-timer__path-remaining.red {
+  color: red;
+}
+
+.base-timer__label {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+}
+
+#box1{
+	text-align: center;
+	background-color: red;
+	width
+}
+
+</style>
+
+<link rel="stylesheet" type="text/css" href="Style.css">
+
+<!-- vuetify   --->
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@mdi/font@5.x/css/materialdesignicons.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+
+</head>
+
+
+
+
+
+
+<body>
+
+
+  <header>
+  <!-- Navbar -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fg-white fixed-top  ">
+  <!-- Container wrapper -->
+
+<img src="Logo_Set.gif" height="60px" width="280px">
+
+  <div class="container-fluid">
+    <!-- Toggle button -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarRightAlignExample"
+      aria-controls="navbarRightAlignExample"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarRightAlignExample">
+      <!-- Left links -->
+      <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <!-- Navbar dropdown -->
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Dropdown
+          </a>
+          <!-- Dropdown menu -->
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"
+            >Disabled</a
+          >
+        </li>
+      </ul>
+      <!-- Left links -->
+    </div>
+    <!-- Collapsible wrapper -->
+  </div>
+  <!-- Container wrapper -->
+</nav>
+
+
+
+
+
+
+  <!-- Navbar -->
+
+  <!-- Background image -->
+  <div
+    class="p-5 text-center bg-image"
+    style="
+      
+      height: 200px;
+      margin-top: 58px;
+    "
+  >
+    <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+      <div class="d-flex justify-content-center align-items-center h-100">
+        <div class="text-white">
+          <h1 class="mb-3">Asansolution Education Exam 2020</h1>
+          <h4 class="mb-3">Computer Quiz Project</h4>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Background image -->
+</header>
+
+	
+	
+<div class="row">
+
+ <div class="col-md-3">
+
+    <div id="box1" style="margin-left: 38px; margin-right: 38px;">
+
+    <center style="background-color: #FFFFE0; margin:8px;">
+      <img src="Pic1.jpg" height="80%" width="80%">
+      <br>
+      <b>Name: </b><i>Souvik Bhattacharji</i>
+      <br>
+      <b>Class: </b><i>5 ( ICSE )</i>
+      <br>
+      <b>Roll: </b><i>AS5001</i>
+      <br>
+      <b>Date: </b><i>19/8/2020</i>
+
+<div style="background-color: #008B8B; color:white; padding:1px; text-align: center;">
+      <h5> : Time Limit : </h5>
+    </div>
+      
+      <div id="app1"style="background-color: #ffff80 ;">
+      
+      </div>
+    
+    <div style="background-color: #008B8B; color:white; padding:1px; text-align: center;">
+      <h5> Created by: Souvik Sir </h5>
+    </div>
+  </center>
+    </div>
+  </div>
+  
+  <div class="col-md-9" style=" text-align: left;">
+    <br>
+    <div id="question" style="background-color: #ffff80 ; margin-right:14px; padding-top: 10px; padding-bottom: 10px;  border:1px solid black;">
+  	<b style="font-size: 24px; color: #ff0000;  padding :15px; "> 1) Who is the Father of Computer?  </b>
+    </div>
+
+<div>
+
+<div id="midbox" class="bg-white p-4">
+<!-- Default radio -->
+<div class="form-check p-3">
+  <input
+    class="form-check-input"
+    type="radio"
+    name="flexRadioDefault"
+    id="flexRadioDefault1"
+  />
+  <label class="form-check-label" for="flexRadioDefault1">
+    Default radio
+  </label>
+</div>
+
+<!-- Default checked radio -->
+<div class="form-check p-3">
+  <input
+    class="form-check-input"
+    type="radio"
+    name="flexRadioDefault"
+    id="flexRadioDefault2"
+    checked
+  />
+  <label class="form-check-label" for="flexRadioDefault2">
+    Default checked radio
+  </label>
+</div>
+
+<!-- Default checked radio -->
+<div class="form-check p-3">
+  <input
+    class="form-check-input"
+    type="radio"
+    name="flexRadioDefault"
+    id="flexRadioDefault2"
+    checked
+  />
+  <label class="form-check-label" for="flexRadioDefault2">
+    Default checked radio
+  </label>
+</div>
+
+<!-- Default checked radio -->
+<div class="form-check p-3">
+  <input
+    class="form-check-input"
+    type="radio"
+    name="flexRadioDefault"
+    id="flexRadioDefault2"
+    checked
+  />
+  <label class="form-check-label" for="flexRadioDefault2">
+    Default checked radio
+  </label>
+</div>
+</div>
+
+<footer class="text-white text-center text-lg-left p-2" style="background-color: #ffff80; border:1px solid black;">
+  <!-- Grid container -->
+  <div class="container p-12">
+    
+
+<div class="row">
+  <div class="col-sm-6"><button type="button" class="btn btn-danger dark ">Exit from the Exam</button></div>
+  <div class="col-sm-6">
+
+<a href="#" class="btn btn-warning ml-3" role="button" data-toggle="button">Skip this Question >> </a>
+<a
+  href="#"
+  class="btn btn-success active"
+  role="button"
+  data-toggle="button"
+  aria-pressed="true"
+  >Go to the next question</a
+>
+</div>
+</div>
+
+
+
+  </div>
+</footer>
+ 
+</div> 
+
+
+
+<footer class="bg-dark text-white text-center text-lg-left">
+  
+  <!-- Grid container -->
+ <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2014-20 Copyright: <a class="text-warning" href="https://asansolution.com/"><b style="font-size:23px;">asansolution.com</b></a> <b>Created by :</b> <i class="text-info">Souvik Bhattacharji.</i>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+
+<script>
+	// Credit: Mateusz Rybczonec
+
+const FULL_DASH_ARRAY = 283;
+const WARNING_THRESHOLD = 10;
+const ALERT_THRESHOLD = 5;
+
+const COLOR_CODES = {
+  info: {
+    color: "green"
+  },
+  warning: {
+    color: "orange",
+    threshold: WARNING_THRESHOLD
+  },
+  alert: {
+    color: "red",
+    threshold: ALERT_THRESHOLD
+  }
+};
+
+const TIME_LIMIT = 100;
+let timePassed = 0;
+let timeLeft = TIME_LIMIT;
+let timerInterval = null;
+let remainingPathColor = COLOR_CODES.info.color;
+
+document.getElementById("app1").innerHTML = `
+<div class="base-timer">
+  <svg class="base-timer__svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <g class="base-timer__circle">
+      <circle class="base-timer__path-elapsed" cx="50" cy="50" r="45"></circle>
+      <path
+        id="base-timer-path-remaining"
+        stroke-dasharray="283"
+        class="base-timer__path-remaining ${remainingPathColor}"
+        d="
+          M 50, 50
+          m -45, 0
+          a 45,45 0 1,0 90,0
+          a 45,45 0 1,0 -90,0
+        "
+      ></path>
+    </g>
+  </svg>
+  <span id="base-timer-label" class="base-timer__label">${formatTime(
+    timeLeft
+  )}</span>
+</div>
+`;
+
+startTimer();
+
+function onTimesUp() {
+  clearInterval(timerInterval);
+}
+
+function startTimer() {
+  timerInterval = setInterval(() => {
+    timePassed = timePassed += 1;
+    timeLeft = TIME_LIMIT - timePassed;
+    document.getElementById("base-timer-label").innerHTML = formatTime(
+      timeLeft
+    );
+    setCircleDasharray();
+    setRemainingPathColor(timeLeft);
+
+    if (timeLeft === 0) {
+      onTimesUp();
+    }
+  }, 1000);
+}
+
+function formatTime(time) {
+  const minutes = Math.floor(time / 60);
+  let seconds = time % 60;
+
+  if (seconds < 10) {
+    seconds = `0${seconds}`;
+  }
+
+  return `${minutes}:${seconds}`;
+}
+
+function setRemainingPathColor(timeLeft) {
+  const { alert, warning, info } = COLOR_CODES;
+  if (timeLeft <= alert.threshold) {
+    document
+      .getElementById("base-timer-path-remaining")
+      .classList.remove(warning.color);
+    document
+      .getElementById("base-timer-path-remaining")
+      .classList.add(alert.color);
+  } else if (timeLeft <= warning.threshold) {
+    document
+      .getElementById("base-timer-path-remaining")
+      .classList.remove(info.color);
+    document
+      .getElementById("base-timer-path-remaining")
+      .classList.add(warning.color);
+  }
+}
+
+function calculateTimeFraction() {
+  const rawTimeFraction = timeLeft / TIME_LIMIT;
+  return rawTimeFraction - (1 / TIME_LIMIT) * (1 - rawTimeFraction);
+}
+
+function setCircleDasharray() {
+  const circleDasharray = `${(
+    calculateTimeFraction() * FULL_DASH_ARRAY
+  ).toFixed(0)} 283`;
+  document
+    .getElementById("base-timer-path-remaining")
+    .setAttribute("stroke-dasharray", circleDasharray);
+}
+</script>
+
+<script src="Basic1.js" type="text/javascript">
+  
+</script>
+
+<!-- MDB -->
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/1.0.0-alpha4/mdb.min.js">
+</script>
+
+</body>
+</html>
